@@ -7,11 +7,11 @@ wb = openpyxl.load_workbook('Match Sheet.xlsx')
 wb.get_sheet_names()
 sheet = wb.get_sheet_by_name('Sheet1')
 
-cellA = "3" #change (from match sheet)
+cellA = "8" #change (from match sheet)
 SheMentor= True #change (from intuition lol)
 SheMentee =True
-cellB= "17" #Big eng Mentor num change
-cellC="2" #little eng mentor num change
+cellB= "22" #Big eng Mentor num change
+cellC="6" #little eng mentor num change
 
 
 mentee = sheet['A'+cellA].value.replace(" *","").replace("*","")
@@ -75,7 +75,7 @@ print textwrap.dedent("""
 -About your mentee-
 %s: %s
 %s is a %s %s student. %s loves %s! %s believes that the advancements in %s is something that will transform our future. An interesting thing on %s bucket list is that %s wants to %s. Sounds like fun! %s also loves %s music.
-See you two soon!
+Feel free to email me if you have any questions. See you two soon!
 
 -----------------------------------
 On another note,
