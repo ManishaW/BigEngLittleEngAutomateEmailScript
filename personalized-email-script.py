@@ -1,17 +1,15 @@
 import openpyxl
 import textwrap
 
-
-
 wb = openpyxl.load_workbook('Match Sheet.xlsx')
 wb.get_sheet_names()
 sheet = wb.get_sheet_by_name('Sheet1')
 
-cellA = "8" #change (from match sheet)
-SheMentor= True #change (from intuition lol)
-SheMentee =True
-cellB= "22" #Big eng Mentor num change
-cellC="6" #little eng mentor num change
+cellA = "36" #change (from match sheet)
+SheMentor= False #change (from intuition lol)
+SheMentee =False
+cellB= "25" #Big eng Mentor num change
+cellC="12" #little eng mentor num change
 
 
 mentee = sheet['A'+cellA].value.replace(" *","").replace("*","")
@@ -30,7 +28,7 @@ wb.get_sheet_names()
 little_sheet = wb.get_sheet_by_name('Form Responses 1')
 
 
-mentor_year= big_sheet['E'+cellC].value.lower()
+mentor_year= big_sheet['E'+cellC].value
 mentee_year= little_sheet['E'+cellC].value.lower()
 mentor_prog=big_sheet['D'+cellB].value
 mentee_prog=little_sheet['D'+cellC].value
