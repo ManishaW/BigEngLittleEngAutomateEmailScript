@@ -1,2 +1,2 @@
 # BigEngLittleEngAutomateEmailScript
-Automated a script to grab info from my excel documents and write a personalized email to all the mentors/mentees
+Automated script grab info from my excel documents and writes a personalized email to all the mentors/mentees in our program. 
